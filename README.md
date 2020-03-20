@@ -1,16 +1,16 @@
 # redbreast
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Telegram bot for Robinhood API.
 
 ## Usage
 
 FIXME: explanation
 
     $ java -jar redbreast-0.1.0-standalone.jar [args]
+
+## Libraries
+
+- [Morse][0]
 
 ## Options
 
@@ -20,17 +20,4 @@ FIXME: listing of options this app accepts.
 
 ...
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2020 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+[0]: https://github.com/Otann/morse
