@@ -2,10 +2,12 @@
   :description "FIXME: write description"
   :url "https://github.com/johnbellone/redbreast"
 
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "Apache License 2.0"
+            :url "https://www.apache.org/licenses/LICENSE-2.0"
+            :year 2020
+            :key "apache-2.0"}
 
-  :dependencies [[org.clojure/clojure "1.10.0"]
+  :dependencies [[org.clojure/clojure "1.10.1"]
                  [clj-logging-config "1.9.12"]
                  [environ "1.1.0"]
                  [org.danielsz/system "0.4.1"]
@@ -24,14 +26,14 @@
   :repl-options {:init-ns user}
 
   :profiles {:dev
-             {:dependencies [[figwheel "0.5.18"]
-                             [figwheel-sidecar "0.5.18"]
+             {:dependencies [[figwheel "0.5.19"]
+                             [figwheel-sidecar "0.5.19"]
                              [cider/piggieback "0.4.0"]
                              [cider/cider-nrepl "0.18.0"]
                              [lein-doo "0.1.11"]
                              [reloaded.repl "0.2.4"]]
 
-              :plugins [[lein-figwheel "0.5.18"]
+              :plugins [[lein-figwheel "0.5.19"]
                         [lein-doo "0.1.11"]]
 
               :source-paths ["dev"]
