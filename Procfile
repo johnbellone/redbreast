@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/redbreast.jar clojure.main -m redbreast.core
+web: java $JVM_OPTS -cp target/uberjar/redbreast.jar clojure.main -m redbreast.core
