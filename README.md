@@ -1,23 +1,20 @@
 # redbreast
 
-Telegram bot for Robinhood API.
+Telegram bot for Stonks.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar redbreast-0.1.0-standalone.jar [args]
+    $ lein uberjar
+    $ java -cp target/uberjar/redbreast.jar clojure.main -m redbreast.core
 
 ## Libraries
 
-- [Morse][0]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
+- [morse][0]
+- [clj-http][1]
+- [cheshire][2]
+- [clj-xchart][3]
 
 [0]: https://github.com/Otann/morse
+[1]: https://github.com/dakrone/clj-http
+[2]: https://github.com/dakrone/cheshire
+[3]: https://github.com/hyPiRion/clj-xchart
