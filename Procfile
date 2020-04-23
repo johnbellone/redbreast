@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -jar target/redbreast.jar
+web: java $JVM_OPTS -cp target/redbreast.jar
