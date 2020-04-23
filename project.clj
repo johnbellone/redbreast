@@ -20,7 +20,6 @@
 
   :uberjar-name "redbreast.jar"
 
-  :main ^:skip-aot redbreast.core
   :target-path "target/%s"
 
   :repl-options {:init-ns user}
@@ -39,10 +38,4 @@
               :source-paths ["dev"]
               :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}
 
-             :uberjar
-             {:source-paths ^:replace ["src/clj" "src/cljc"]
-              :prep-tasks ["compile"
-                           ["cljsbuild" "once" "min"]]
-              :hooks []
-              :omit-source true
-              :aot :all}})
+             })
