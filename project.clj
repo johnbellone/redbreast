@@ -13,17 +13,10 @@
                  [org.danielsz/system "0.4.1"]
                  [org.clojure/tools.namespace "0.2.11"]
                  [morse "0.4.3"]]
-
-  :plugins [[lein-environ "1.1.0"]]
-
   :min-lein-version "2.6.1"
-
   :uberjar-name "redbreast.jar"
-
   :target-path "target/%s"
-
   :repl-options {:init-ns user}
-
   :profiles {:dev
              {:dependencies [[figwheel "0.5.19"]
                              [figwheel-sidecar "0.5.19"]
