@@ -1,7 +1,6 @@
 (ns redbreast.core
   (:require [clojure.core.async :refer [<!!]]
-            [clojure.string :as str]
-            [com.hypirion.clj-xchart :as c]
+            [clojure.string :as s]
             [environ.core :refer [env]]
             [morse.handlers :as h]
             [morse.polling :as p]
@@ -10,7 +9,6 @@
 
 ; TODO: fill correct token
 (def token (env :telegram-token))
-
 
 (h/defhandler handler
 
@@ -24,10 +22,6 @@
       (println "Help was requested in " chat)
       (t/send-text token id "Help is on the way")))
 
-  (h/command-fn "pricehistory"
-    (fn [{{id :id :as chat} :chat}]
-      (t/send-text token id "This doesn't do anything yet.")))
-
   (h/message-fn
     (fn [{{id :id} :chat :as message}]
       (println "Intercepted message: " message)
@@ -35,7 +29,7 @@
 
 (defn -main
   [& args]
-  (when (str/blank? token)
+  (when (s/blank? token)
     (println "Please provde token in TELEGRAM_TOKEN environment variable!")
     (System/exit 1))
 
