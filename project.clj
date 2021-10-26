@@ -13,7 +13,8 @@
                  [org.danielsz/system "0.4.1"]
                  [org.clojure/tools.namespace "0.2.11"]
                  [morse "0.4.3"]
-                 [cheshire "5.10.0"]]
+                 [cheshire "5.10.0"]
+                 [com.hypirion/clj-xchart "0.2.0"]]
   :min-lein-version "2.6.1"
   :uberjar-name "redbreast.jar"
   :target-path "target/%s"
