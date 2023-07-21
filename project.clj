@@ -11,7 +11,9 @@
                  [clj-logging-config "1.9.12"]
                  [environ "1.2.0"]
                  [morse "0.5.0-SNAPSHOT"]
-                 [cheshire "5.11.0"]]
+                 [cheshire "5.11.0"]
+                 [compojure "1.7.0"]
+                 [info.sunng/ring-jetty9-adapter "0.22.0"]]
   :min-lein-version "2.6.1"
   :uberjar-name "redbreast.jar"
   :target-path "target/%s"
@@ -19,8 +21,6 @@
   :jvm-opts ["-server"]
   :profiles {:dev [:project/dev :profiles/dev]
              :uberjar {:omit-source true
-                       :env {:production true
-                             :app-version :project/version}
                        :aot :all
                        :plugins [[lein-environ "1.2.0"]]
                        :source-paths ["target/prod"]}})
